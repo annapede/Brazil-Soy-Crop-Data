@@ -8,7 +8,7 @@ MapBiomas 30 m resoltuion data was obtained using [Google Earth Engine](https://
 
 Data is downloaded as TIF files, which can be handled in R. 
 
-## R Data Handling and Plotting
+## R Data Handling
 
 Install the following packages
 
@@ -38,3 +38,5 @@ for (year in ano){
    writeRaster(reclass,paste(sprintf('soy-%s.tif', year)))
 }
 ```
+
+## Maps Plotting
