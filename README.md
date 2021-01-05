@@ -27,7 +27,7 @@ setwd("~/Desktop/XXX")
 ano<-list(2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018)
 
 #Reclass Matrix:
-m <- c(0, 38, 0,  39, 39, 1,  40, 41, 0)
+m <- c(0, 38, 0,  38, 39, 1,  39, 41, 0)
 rclmat <- matrix(m, ncol=3, byrow=TRUE)
 
 for (year in ano){
@@ -37,6 +37,6 @@ for (year in ano){
    remove(imported_raster,arquivo)
    writeRaster(reclass,paste(sprintf('soy-%s.tif', year)))
 }
-```
+
 
 ## Maps Plotting
